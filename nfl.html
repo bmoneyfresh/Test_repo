@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NFL Sports Quiz</title>
+<link href ="style.css" rel ="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<script src = "main.js"></script>
+</head>
+
+<body>
+<h1>NFL Sports Quiz!</h1>
+
+<form id = "quiz" name = "quiz">
+
+<input type="hidden" id="quizNumber" value="3">
+
+<!--Code for Question 1 -->
+<p class = "questions">Who is this player?</p>
+<img src="george_kittle.jpg" id = "img" alt="gk" height="300" width="300">
+<input id = "textbox" type = "text" name = "question1" class = "questionInput">
+<hr>
+
+<!--Code for Question 2 -->
+<p class = "questions">Who is this player?</p>
+<img src="nick_chubb.jpg" id = "img" alt="nc" height="300" width="300">
+<input id = "textbox" type = "text" name = "question2" class ="questionInput">
+<hr>
+
+<!--Code for Question 3 -->
+<p class = "questions">Who is this player?</p>
+<img src="Clay_Matthews.jpg" id = "img" alt="cw" height="300" width="300">
+<input id = "textbox" type = "text" name = "question3" class = "questionInput">
+<hr>
+
+<!--Code for Question 4 -->
+<p class = "questions">Who is this player?</p>
+<img src="fletcher_cox.jpg" id = "img" alt="fc" height="300" width="300"><br>
+<input type = "radio" id = "mc" name = "question4" value = "Marcus Spears"> Marcus Spears<br>
+<input type = "radio" id = "mc" name = "question4" value = "Fletcher Cox" class = "questionRadio"> Fletcher Cox<br>
+<input type = "radio" id = "mc" name = "question4" value = "Timmy Jernigan"> Timmy Jernigan<br>
+<hr>
+
+<!--Code for Question 5 -->
+<p class = "questions">Who is this player?</p>
+<img src="jedrick.jpg" id = "img" alt="jw" height="300" width="300"><br>
+<input type = "radio" id = "mc" name = "question5" value = "Joel Bitonio"> Joel Bitonio<br>
+<input type = "radio" id = "mc" name = "question5" value = "JC Tretter"> JC Tretter<br>
+<input type = "radio" id = "mc" name = "question5" value = "Jedrick Wills Jr." class = "questionRadio"> Jedrick Wills Jr.<br>
+
+<!--Code for submission button and instruction text -->
+<input id = "button" type = "button" value = "Click here to finish" onclick = "check_answers();">
+<p id = "instructions">**Scroll to the top of the page to see your results!</p>
+</form>
+
+<!--Code for submission page -->
+<div id = "submission_page">
+<p id = "number_correct"></p>
+<p id = "message"></p>
+<img id = "picture">
+</div>
+</html>
+
+</body>

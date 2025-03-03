@@ -1,0 +1,28 @@
+body{
+  margin:0 auto;
+  font-family: 'Lato', sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+h2{
+  padding: 20px;
+  text-align: center;
+}
+
+.quiz-container{
+  background-color: #d2def2;
+  width: 700px;
+  height: 680px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
